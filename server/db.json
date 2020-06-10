@@ -1,0 +1,29 @@
+{
+  "posts": [
+    {
+      "_id": "9bdf52a4830779a1383ac24f1b3ed054",
+      "user": {
+        "_id": "9bdf52a4830779a1383ac24f1b3ed054",
+        "fullname": "Адриано Челентано",
+        "avatar": "https://sun9-62.userapi.com/c850324/v850324525/580e7/nr7k-twznjQ.jpg",
+        "isOnline": false
+      },
+      "title": "Хочу в АЙТИХАРТ",
+      "text": "Ever wonder how?",
+      "date": "Tue May 13 2020 20:23:57",
+      "likes": 1
+    },
+    {
+      "_id": "9bdf52a4830779a1383ac24f1b3ed054",
+      "user": {
+        "_id": "9bdf52a4830779a1383ac24f1b3ed054",
+        "fullname": "USH sdhusf",
+        "avatar": "https://sun9-62.userapi.com/c850324/v850324525/580e7/nr7k-twznjQ.jpg"
+      },
+      "title": "dsfsdf sdf sdg dfg df",
+      "text": "lorem  sddsf ef sdf",
+      "date": "Tue May 13 2020 20:23:57",
+      "likes": 1
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+.post {
+  padding: 24px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+  height: 32px;
+  display: flex;
+}
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  background: gray;
+  border-radius: 50px;
+}
+
+.post-info {
+  margin-left: 5px;
+}
+
+.user-fullname {
+  color: #5cb85c;
+}
+
+.post-date {
+  font-size: 0.8rem;
+}
+
+.content {
+  padding: 16px 0;
+
+  .title {
+    margin-bottom: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  .text {
+    color: #999;
+  }
+}
+
+.footer {
+  color: #999;
+}

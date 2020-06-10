@@ -1,0 +1,17 @@
+<div ngClass="post">
+  <div ngClass="post-header">
+    <div ngClass="user-avatar"></div>
+    <div ngClass="post-info">
+      <div ngClass="user-fullname">{{ post.author.username }}</div>
+      <div ngClass="post-date">{{ post.createdAt | date: "longDate" }}</div>
+    </div>
+    <div ngClass="like"></div>
+  </div>
+  <div ngClass="content">
+    <div ngClass="title">{{ post.title }}</div>
+    <div ngClass="text">{{ post.text }}</div>
+  </div>
+  <div ngClass="footer">
+    <span>Read more...</span>
+  </div>
+</div>

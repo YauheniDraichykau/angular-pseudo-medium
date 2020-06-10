@@ -1,0 +1,38 @@
+.header {
+  height: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .header-top-content {
+    height: 100%;
+    max-width: 1120px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo-text {
+      font-size: 1.5rem;
+      color: #5cb85c;
+    }
+
+    .nav {
+      &__item {
+        margin-left: 15px;
+        display: inline-block;
+        list-style-type: none;
+
+        & > a {
+          text-decoration: none;
+          color: inherit;
+
+          &:hover {
+            color: #5cb85c;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

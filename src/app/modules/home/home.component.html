@@ -1,0 +1,30 @@
+<div ngClass="home">
+  <div ngClass="home-content">
+    <nav>
+      <button
+        ngClass="tab-button"
+        (click)="switchComponent('usersFeed')"
+        [ngStyle]="{
+          color: postsType === 'usersFeed' ? 'black' : '#aaa',
+          borderBottom: postsType === 'usersFeed' ? '2px solid #5cb85c' : 0
+        }"
+      >
+        Your Feed
+      </button>
+      <button
+        ngClass="tab-button"
+        (click)="switchComponent('globalFeed')"
+        [ngStyle]="{
+          color: postsType === 'globalFeed' ? 'black' : '#aaa',
+          borderBottom: postsType === 'globalFeed' ? '2px solid #5cb85c' : 0
+        }"
+      >
+        Global Feed
+      </button>
+    </nav>
+    <div [ngSwitch]="postsType">
+      <app-all-posts *ngSwitchCase="'globalFeed'"></app-all-posts>
+      <app-user-posts *ngSwitchCase="'usersFeed'"></app-user-posts>
+    </div>
+  </div>
+</div>

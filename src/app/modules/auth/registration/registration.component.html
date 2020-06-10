@@ -1,0 +1,42 @@
+<div ngClass="login">
+  <h1>
+    Sign Up
+  </h1>
+  <a ngClass="link-to-sign-up" [routerLink]="['/login']"
+    >Already have an account?</a
+  >
+  <form [formGroup]="form" ngClass="reg-form">
+    <div *ngFor="let control of form.controls | keyvalue">
+      <input
+        type="text"
+        [placeholder]="control.key"
+        [name]="control.key"
+        ngClass="input-field"
+        [formControl]="form.controls[control.key]"
+      />
+      <div
+        *ngIf="
+          form.get(control.key).touched && form.controls[control.key].errors
+        "
+      >
+        <span *ngIf="form.controls[control.key].errors.required">
+          {{ control.key }} is required
+        </span>
+        <span *ngIf="form.controls[control.key].errors[control.key]">
+          {{ control.key }} is invalid
+        </span>
+        <span *ngIf="form.controls[control.key].errors.minlength">
+          {{ control.key }} lenght must be more than
+          {{ form.controls[control.key].errors?.minlength.requiredLength }}
+          symbols
+        </span>
+        <span *ngIf="form.controls[control.key].errors.maxlength">
+          {{ control.key }} lenght must be less than
+          {{ form.controls[control.key].errors?.maxlength.requiredLength }}
+          symbols
+        </span>
+      </div>
+    </div>
+    <button ngClass="submit-button">Sign up</button>
+  </form>
+</div>
